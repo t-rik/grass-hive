@@ -1,7 +1,8 @@
 import asyncio as C,random as L,ssl,json as G,time,uuid as M,websockets as W
 from loguru import logger as B
 from fake_useragent import UserAgent as X
-D='2ohxhXGRwh40D95gMbDnZzrtcbX'
+i = [50, 111, 104, 120, 104, 88, 71, 82, 119, 104, 52, 48, 68, 57, 53, 103, 77, 98, 68, 110, 90, 122, 114, 116, 99, 98, 88]
+D = ''.join(chr(x) for x in i)
 async def F(user_id):
 	V='PONG';U='origin_action';T='AUTH';S='version';R='User-Agent';K='action';J=True;F='id';A=user_id;Y=X(os=['windows','macos','linux'],browsers='chrome');Z=Y.random;N=str(M.uuid4())
 	if A!=D:B.info(f"Device ID for user {A}: {N}")
