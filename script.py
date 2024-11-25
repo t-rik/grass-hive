@@ -27,7 +27,7 @@ async def F(user_id):
 						Q={F:E[F],U:V}
 						if A!=D:B.debug(f"Sending PONG for user {A}: {Q}")
 						await H.send(G.dumps(Q))
-		except Exception as f:B.error(f"Error for user {A}: {f}")
+		except Exception as f:B.error(f"Error for user : {f}")
 async def A():
 	E=D
 	try:
